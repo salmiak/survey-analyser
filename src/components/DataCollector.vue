@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="dataCollector">
-    <textarea v-model="dataSource" placeholder="Data goes here"></textarea>
+    <textarea v-model="dataSource" placeholder="Data goes here" :style="{'height':dataSource?'30px':'300px'}"></textarea>
   </div>
 </template>
 
@@ -41,6 +41,13 @@ export default {
 <style lang="css" scoped>
 textarea {
   width: 100%;
-  height: 30vh;
+  border: 1px solid #DDD;
+  border-radius: 6px;
+  transition: all 0.5s;
+  outline: none;
+}
+textarea:focus {
+  height: 300px !important;
+  border: 1px solid #AAA;
 }
 </style>
