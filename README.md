@@ -1,5 +1,11 @@
 # survey-analyser
 
+## ToDo
+- [ ] Read in Google Sheet data
+- [ ] Add D3 or other graph tool
+- [ ] Visualize histogram
+- [ ] Make it possible to filter based on one or many answers (for instance see data only where users answered XYZ to the question ABC)
+
 ## Project setup
 ```
 npm install
